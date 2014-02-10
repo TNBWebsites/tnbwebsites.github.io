@@ -17,7 +17,33 @@ body {
 h2 { font-size: 1.5em; }
 
 section.row {
-	margin-top: 50px;
+	margin-top: 120px;
+}
+@media screen and (max-width: 500px) {
+	section.row { margin-top: 50px; }
+}
+
+.btn-primary {
+	background-color: black;
+	border-color: black;
+	box-shadow: 2px 2px 5px #888888;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+	background-color: #333333;
+	border-color: #333333;
+}
+.btn-primary:focus, .btn-primary:active {
+	box-shadow: 0px 0px 5px #888888;
+}
+a {
+	color: black;
+	text-decoration: underline;
+}
+a:hover, a:focus, a:visited {
+	color: #555555;
+}
+a.btn, .no-underline-links a, a.no-underline-links {
+	text-decoration: none;
 }
 
 
@@ -34,7 +60,7 @@ section.row {
 }
 #cta {
 	text-align: center;
-	margin: 20px 0;
+	margin: 20px 0 0;
 }
 #cta span.glyphicon {
 	font-size: 0.8em;
@@ -49,6 +75,9 @@ section.row {
 
 /* Who */
 
+section#who {
+	margin-top: 50px;
+}
 section#who .statement, section#what .item {
 	margin-top: 20px;
 }
@@ -159,4 +188,24 @@ section#how div.explanation.right {
 @media screen and (max-width: 500px) {
 	section#how div.explanation.left { padding-right: 10%; }
 	section#how div.explanation.right { padding-left: 10%; }
+}
+
+/* Bottom CTA */
+section#cta_bottom {
+	text-align: center;
+	margin: 200px 0;
+}
+@media screen and (max-width: 767px) {
+	section#cta_bottom { margin: 100px 0; }
+}
+
+/* Footer */
+footer {
+	padding: 15px 0 5px;
+	background-color: #f8f8f8;
+	border-top: 1px solid #e7e7e7;
+}
+footer #join-us {
+	text-align: right;
+	font-style: italic;
 }
