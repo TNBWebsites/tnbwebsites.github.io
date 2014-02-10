@@ -20,7 +20,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body id="home">
 
     <header class="navbar navbar-default navbar-fixed-top no-underline-links" role="navigation">
       <div class="container">
@@ -31,17 +31,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">T<span>op</span>N<span>otch</span>B<span>usiness</span> Websites</a>
+          <a class="navbar-brand" href="index.html#">T<span>op</span>N<span>otch</span>B<span>usiness</span> Websites</a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#who">Who</a></li>
-            <li><a href="#what">What</a></li>
-            <li><a href="#how">How</a></li>
-          </ul>
+          <div id="js-scrollspy">
+            <ul class="nav navbar-nav">
+              <li><a href="#who" id="who-nav" class="js-scrollTo">Who</a></li>
+              <li><a href="#what" id="what-nav" class="js-scrollTo">What</a></li>
+              <li><a href="#how" id="how-nav" class="js-scrollTo">How</a></li>
+            </ul>
+          </div>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#about">Instant quote</a></li>
+            <li><a href="#" class="preventOnClick" id="contact">Contact us</a></li>
+            <li><a href="quote.html">Instant quote</a></li>
           </ul>
         </div>
       </div>

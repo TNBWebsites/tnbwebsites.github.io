@@ -46,6 +46,11 @@ a.btn, .no-underline-links a, a.no-underline-links {
 	text-decoration: none;
 }
 
+code {
+	color: black;
+	background-color: #eeeeee;
+}
+
 
 /* Homepage intro */
 
